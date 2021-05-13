@@ -1,0 +1,336 @@
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+@media only screen and (min-width : 1200px) {
+    .fold h2{padding-right:100px;}
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .litepaper .lang{
+    height: 82px;
+    position: relative;
+    padding: 0;
+}
+    .proofs a{ font-size: 20px; }
+    .community a span{
+    font-size: 20px;
+}
+    .community a{
+    margin-right: 8px;
+    padding: 17px 18px;
+}
+    .markets .ctas a{
+    margin-right: 22px;
+    font-size: 18px;
+}
+    .markets .ctas a.uniswap{}
+    .proofs a{
+    font-size: 19px;
+}
+    .proofs a span{
+    font-size: 19px;
+}
+    .breed .img-holder p{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+}
+
+@media only screen and (min-width : 992px){
+
+    header nav{
+	    display: block !important;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .roadmap .box{
+    display: block;
+    width: 100%;
+    margin: 0 0 16px 0;
+}
+    .roadmap{
+    border-collapse: initial;
+    border-spacing: initial;
+    margin-bottom: 60px;
+}
+    .litepaper .lang{
+    width: 31%;
+    height: 100px;
+}
+    .address{
+    width: 100%;
+    margin: 0 0 36px 0;
+}
+
+	header{
+ 		filter:alpha(opacity=100) !important; 
+	    opacity: 1 !important; 
+	    -moz-opacity: 1 !important; 
+	    -o-opacity: 1 !important;
+	}
+	    
+    header nav{display: none;position: absolute;top: 80px;left: 0;width: 100%;background: #13161D;padding: 0px 20px;z-index: 9;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;}
+    header nav a{
+    display: block;
+    padding: 6px 0;
+    margin-bottom: 6px;
+}
+    header nav .left{
+    display: block;
+    margin: 0;
+}
+    header nav .right{
+    float: none;
+    margin: 0;
+}
+    header nav .uniswap{
+    display: inline-block;
+}
+    header .hamburger-icon{
+    display: block;
+    position: absolute;
+    top: 29px;
+    right: 20px;
+    width: 28px;
+}
+    header .hamburger-icon i{
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 0 0 8px 0;
+}
+    header .hamburger-icon i:last-child{
+    margin-bottom: 0;
+}
+    header .logo{display: block; margin: 10px 0;}
+    header .logo img{
+    width: 30px;
+    display: inline-block;
+    margin-right: 12px;
+}
+    header .logo span{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+    header .container{position:relative;}
+    .fold h2{
+    padding-left: 0;
+}
+    .markets .ctas a{
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+    .fold{
+    padding-top: 40px;
+    margin-bottom: 20px !important;
+}
+    .markets .ctas{margin-bottom: 20px;padding-left: 0;}
+
+    .community a{margin-bottom:26px;}
+    .breed .img-holder p{padding: 0 !important;width: 100%;display: block;margin: 12px 0 0;}
+    .breed .img-holder img{width: 100%;}
+    .breed .img-holder:last-of-type p{margin: 0 0 12px 0;}
+    footer{height:auto;}
+    footer .logo{text-align: center;}
+    footer .etherscan{margin: 26px 0 0 0;}
+    footer .uniswap{display: inline-block;margin: 24px auto 0;float: none;}
+    .fold, .tokenomics, .proofs, .community, .help, .breed, .markets{margin-bottom: 60px;}
+    .section-headline{font-size: 26px;margin-bottom: 16px;}
+    .tokenomics .metrics .metric{margin: 12px 0;}
+    .tokenomics .pool{width: 100%;padding: 40px 20px;margin: 16px 0;}
+    .tokenomics .metrics.right{}
+    .hide-on-mobile{ width: 60%; margin: 0 auto; padding-bottom: 20px; }
+    .fold h1{padding-left: 0;margin-top: 0;display: none;}
+    .fold .address{padding-left: 0;}
+    footer .contact{
+    margin: 40px auto 0;
+    float: none;
+}
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .fold-listing .details .cta{
+    float: none;
+    margin: 16px 0 24px;
+}
+    .fold-listing .details{
+    margin-top: 36px;
+}
+    .fold-listing{
+    background-position: center left;
+    padding-bottom: 12px;
+}
+    .fold-listing h4{
+    text-align: left;
+}
+    .fold-listing span{
+    text-align: left;
+    margin-bottom: 0px; 
+    display: inline-block;
+    width: 49%;
+}
+    .litepaper .lang{
+    width: calc(50% - 14px);
+}
+
+    .audit .audit-link{width:100%;height: auto;}
+    .audit .list{width: 95%;}
+    .audit .audit-link img{
+    width: 64px;
+}
+    .audit .audit-link span{}
+    .audit .list .item a{
+    font-size: 14px;
+    width: calc(100% - 32px);
+    line-height: 17px;
+}
+    .container{padding: 0 16px;}
+    .fold .logo{ margin-top: 0px;}
+    .fold h2{font-size: 22px;}
+    .tokenomics .pool{}
+    .tokenomics .metrics h3{font-size: 14px;line-height: initial;}
+    .tokenomics .metrics h4{font-size: 20px;line-height: initial;}
+    .section-headline{}
+    .proofs a span{ }
+    .proofs a{ font-size: 14px;}
+    .community a span{}
+    .community a{padding: 14px 16px;margin-right: 16px;margin-bottom: 16px;}
+    .help a span{font-size: 18px;width: calc(100% - 34px);}
+    .breed .img-holder p{font-size: 16px;line-height: 20px;}
+    .fold .address a i{float: none;margin: 8px 0 0;display: block;padding: 16px;text-align: center;}
+    .fold .address a span{display: block;text-align: center;}
+    .help a{width: 100%;}
+    .help a img{width: 34px;margin-left: 0;}
+    .fold .address a{padding: 16px;width: 100%;}
+    .fold .address h3{text-align:center;padding:0;}
+    .markets .ctas a{
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+}
+    .community a{width: 60%;margin: 0 auto 12px !important;max-width: 100%;text-align: left;height: auto;}
+
+.features .feature{
+	    width: 100%;
+	    display: inline-block;
+	}
+	
+	.dashboard .info ul{
+		padding: 0px 5px 0px 5px;
+	}
+	.dashboard .info ul li .qty{
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+    .markets .ctas .pancakeswap, .markets .ctas .burgerswap, .markets .ctas .uniswap{margin-bottom:8px;}
+    .litepaper{margin-bottom:60px;}
+    .litepaper .lang span{
+    position: static;
+    margin: 2px 0 0 0;
+    -webkit-transform: initial;
+        -ms-transform: initial;
+            transform: initial;
+    top: auto;
+}
+    .litepaper .lang{
+    height: auto;
+    width: 100%;
+    padding: 16px 16px;
+}
+    .audit .audit-link span{
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 12px;
+}
+    .audit .audit-link img{
+    width: 40px;
+}
+    .community a{width:400px;}
+    .address .copy-to-clipboard span{
+    font-size: 12px;
+}
+    .address .copy-to-clipboard{
+    padding: 8px 8px;
+}
+    .addresses{margin-bottom:40px;}
+    .address .logo{
+    height: 40px;
+}
+    .breed .img-holder{
+    margin-bottom: 16px;
+}
+    .tokenomics .metric:before{
+    height: 40px;
+}
+    .tokenomics .metrics.right{text-align:left;}
+    .tokenomics .metrics.right .metric:before{
+    right: auto;
+    left: -8px;
+}
+    .tokenomics .metrics{font-size:0;}
+    .tokenomics .metrics .metric{
+    display: inline-block;
+    width: 50%;
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+}
+    .tokenomics .metrics .metric:last-child{
+}
+    .fold, .tokenomics, .proofs, .community, .help, .breed{margin-bottom:60px;}
+    .markets .ctas a.uniswap{width: 100%;margin-bottom: 8px;}
+    .fold .logo{margin-top: 0px;}
+    .fold h2{
+    font-size: 18px;
+    line-height: 1.25;
+}
+    .tokenomics .pool{
+    padding: 30px 14px;
+    font-size: 18px;
+    margin: 12px 0;
+}
+    .tokenomics .metrics h3{}
+    .tokenomics .metrics h4{
+    font-size: 16px;
+}
+    .section-headline{}
+    .proofs a span{}
+    .proofs a{ }
+    .community a span{}
+
+    .help a span{}
+    .breed .img-holder p{}
+    .help a{}
+    .help a img{}
+    .fold .address a span{font-size: 11px;}
+
+	.features .feature{
+	    width: 100%;
+	    display: inline-block;
+	}
+	
+}
+
+@media only screen and (max-width : 320px) {
+
+}
+
