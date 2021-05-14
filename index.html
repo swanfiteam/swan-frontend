@@ -36,22 +36,22 @@
 			<div class="left">
 			
 			
-				<a href="#dashboard-section" class="scrollTo">概览</a>
-				<a href="#features-section" class="scrollTo">特性</a>
+				<a href="#dashboard-section" target="_self" class="scrollTo">概览</a>
+				<a href="#features-section" target="_self" class="scrollTo">特性</a>
 				<a href="#contracts-section" class="scrollTo">多链合约</a>
-				<a href="#tokenomics-section" class="scrollTo">SWAN代币</a>
-				<a href="#roadmap-section" class="scrollTo">线路图</a>
-				<a href="#community-section" class="scrollTo">社区</a>
-				<a href="#community-section" class="scrollTo">质押&治理</a>
-				<a href="https://blog.kangaltoken.com" target="_blank" class="colored">Lite Paper</a>
+				<a href="#tokenomics-section" target="_self" class="scrollTo">SWAN代币</a>
+				<a href="#roadmap-section" target="_self" class="scrollTo">线路图</a>
+				<a href="#community-section" target="_self" class="scrollTo">社区</a>
+				<a href="javascript: alert('Comming soon.')" target="_self">质押&治理</a>
+				<a href="https://www.swanswap.cc/Litepaper_cn.pdf" target="_blank" class="colored">Lite Paper</a>
 			</div>
 			<div class="right">	
-				<a href="https://swanteam.gitbook.io/swan-swap/swan-swap" target="_blank" class="colored">Docs</a>
+				<a href="https://swanteam.gitbook.io/swan-swap-cn/" target="_blank" class="colored">Docs</a>
 				<a href="https://github.com/swanfiteam" target="_blank" class="colored">Github</a>
-				<div class="lang">
+				<!-- <div class="lang">
 					<a href="en.html">EN</a>
 					<a href="index.html" class="active">中文</a>
-				</div>
+				</div> -->
 			</div>
 		</nav>
 
@@ -75,12 +75,12 @@
 		<div class="col-md-8">
 			<!-- <img src="images/cb-logo.png" alt="" class="logo"> -->
 			<h3><strong>BSC</strong>首链流动性池已启动！持币快照领空投！</h3>
-			<a href="https://twitter.com/kangaltoken/status/1379544590076809221" class="ann" target="_blank">立即持币增值</a>
+			<a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56" class="ann" target="_blank">立即持币增值</a>
 		</div>
 		<div class="col-md-4 details">
 			<div class="col-md-12">
 				<h4>SWAN价格</h4>
-				<span>BSC <i>$0.00000002</i></span>
+				<span>BSC <i id="bsc_last">$0</i></span>
 			</div>
 		</div>
 
@@ -174,10 +174,10 @@
             		</li>
             		<li>
             			<div class="bold">BSC</div>
-            			<div>$0.00016</div>
-            			<div>$511,551.56</div>
-            			<div class="qty">1,234,567,891,234,657</div>
-            			<div class="qty">1,234,567,891,234,657</div>
+            			<div id="bsc_price">$0</div>
+            			<div id="bsc_market_cap">$0</div>
+            			<div class="qty" id="bsc_burn">0</div>
+            			<div class="qty" id="bsc_bouns">0</div>
             		</li>
             	</ul>
             </div>
@@ -193,12 +193,12 @@
 			<img src="images/logo/bsc.svg" alt="Ethereum Logo" class="logo">
 			<h3><strong>Binance Smart Chain</strong> (BSC)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="bsc" data-clipboard-text="0xd45918861241e6C00f7134BE2505cCF1D131E0dB">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0xd45918861241e6C00f7134BE2505cCF1D131E0dB</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0xde8ed8c9480ea12d050182aa99630b235de30f83&outputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56" target="_blank" class="pancakeswap">PancakeSwap</a>
+				<i><a href="https://bscscan.com/address/0xd45918861241e6C00f7134BE2505cCF1D131E0dB" target="_blank">View Contract</a></i>
+				<a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xd45918861241e6C00f7134BE2505cCF1D131E0dB" target="_blank" class="pancakeswap">PancakeSwap</a>
 			</div>
 		</div>
 		
@@ -206,12 +206,12 @@
 			<img src="images/logo/eth.svg" alt="Binance Smart Chain logo" class="logo">
 			<h3><strong>Ethereum</strong> (ETH)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="eth" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0x56656F6Dd471208359D0dFfC8d8504919B6759bA</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://app.uniswap.org/#/swap?inputCurrency=0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2" class="uniswap" target="_blank">UniSwap</a>
+				<i><a href="https://cn.etherscan.com/address/0x56656F6Dd471208359D0dFfC8d8504919B6759bA" target="_blank">View Contract</a></i>
+				<a href="https://app.uniswap.org/#/swap?outputCurrency=0x56656F6Dd471208359D0dFfC8d8504919B6759bA" class="uniswap" target="_blank">UniSwap</a>
 			</div>
 		</div>
 		
@@ -219,12 +219,12 @@
 			<img src="images/logo/heco.jpg" alt="Ethereum Logo" class="logo">
 			<h3><strong>Huobi ECO Chain</strong> (HECO)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="heco" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0x56656F6Dd471208359D0dFfC8d8504919B6759bA</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://ht.mdex.com/#/swap" target="_blank" class="mdex">Mdex</a>
+				<i><a href="https://hecoinfo.com/address/0x56656F6Dd471208359D0dFfC8d8504919B6759bA" target="_blank">View Contract</a></i>
+				<a href="https://ht.mdex.com/#/swap?outputCurrency=0x56656F6Dd471208359D0dFfC8d8504919B6759bA" target="_blank" class="mdex">Mdex</a>
 			</div>
 		</div>
 		
@@ -232,12 +232,12 @@
 			<img src="images/logo/matic.svg" alt="Binance Smart Chain logo" class="logo">
 			<h3><strong>Polygon</strong> (MATIC)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="matic" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0x56656F6Dd471208359D0dFfC8d8504919B6759bA</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://quickswap.exchange/#/swap?inputCurrency=&outputCurrency=0xc2132d05d31c914a87c6611c10748aeb04b58e8f" class="quickswap" target="_blank">QuickSwap</a>
+				<i><a href="https://explorer-mainnet.maticvigil.com/address/0x56656F6Dd471208359D0dFfC8d8504919B6759bA" target="_blank">View Contract</a></i>
+				<a href="https://quickswap.exchange/#/swap?outputCurrency=0x56656F6Dd471208359D0dFfC8d8504919B6759bA" class="quickswap" target="_blank">QuickSwap</a>
 			</div>
 		</div>
 		
@@ -245,12 +245,12 @@
 			<img src="images/logo/avax.svg" alt="Ethereum Logo" class="logo">
 			<h3><strong>Avalanche</strong> (AVAX)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="avax" data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://app.pangolin.exchange/#/swap?outputCurrency=&inputCurrency=0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c" class="pangolin" target="_blank">Pangolin</a>
+				<i><a href="https://cchain.explorer.avax.network/address/0x03Bd77990F28a2393792Fa111E553F4665121C88/transactions" target="_blank">View Contract</a></i>
+				<a href="https://app.pangolin.exchange/#/swap?outputCurrency=0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c" class="pangolin" target="_blank">Pangolin</a>
 			</div>
 		</div>
 		
@@ -258,12 +258,12 @@
 			<img src="images/logo/fantom.png" alt="Binance Smart Chain logo" class="logo">
 			<h3><strong>Fantom</strong> (FTM)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="fantom" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">0x6e765d26388a17a6e86c49a8e41df3f58abcd337</span></a>
+					<a><span>0x56656F6Dd471208359D0dFfC8d8504919B6759bA</span></a>
 				</div>
-				<i>View Contract</i>
-				<a href="https://swap.spiritswap.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x5Cc61A78F164885776AA610fb0FE1257df78E59B" class="spiritswap" target="_blank">SpiritSwap</a>
+				<i><a href="https://ftmscan.com/address/0x56656F6Dd471208359D0dFfC8d8504919B6759bA" target="_blank">View Contract</a></i>
+				<a href="https://swap.spiritswap.finance/#/swap?outputCurrency=0x56656F6Dd471208359D0dFfC8d8504919B6759bA" class="spiritswap" target="_blank">SpiritSwap</a>
 			</div>
 		</div>
 		
@@ -271,11 +271,11 @@
 			<img src="images/logo/okex.png" alt="Ethereum Logo" class="logo">
 			<h3><strong>OKEx Chain</strong> (OKT)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="okex" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">( Comming soon )</span></a>
+					<a><span>( Comming soon )</span></a>
 				</div>
-				<i>View Contract</i>
+				<i><a href="https://www.oklink.com/okexchain" target="_blank">View Contract</a></i>
 				<a href="https://www.okex.com/hk/dex/swap" class="okex" target="_blank">OKEx Swap</a>
 			</div>
 		</div>
@@ -284,11 +284,11 @@
 			<img src="images/logo/gate.png" alt="Binance Smart Chain logo" class="logo">
 			<h3><strong>GateChain</strong> (GT)</h3>
 			<div class="copy-to-clipboard eth">
-				<div>
+				<div class="clipboard" id="okex" data-clipboard-text="0x56656F6Dd471208359D0dFfC8d8504919B6759bA">
 					<a><img src="images/copy-ico.svg" alt="Copy icon"></a>
-					<a><span data-clipboard-text="0x6e765d26388a17a6e86c49a8e41df3f58abcd337">( Comming soon )</span></a>
+					<a><span>( Comming soon )</span></a>
 				</div>
-				<i>View Contract</i>
+				<i><a href="https://explorer.gatechain.io/" target="_blank">View Contract</a></i>
 				<a href="https://www.hipo.com/zh/swap/" target="_blank" class="hiposwap">HipoSwap</a>
 			</div>
 		</div>
@@ -323,16 +323,18 @@
 			<a href="https://www.okex.com/hk/dex/swap" class="okex" target="_blank">OKEx Swap</a>
 			 -->
 			<div class="secondary">
-				<a href="https://coinmarketcap.com/currencies/kangal" target="_blank">
+				<!-- <a href="https://coinmarketcap.com" target="_blank">
 					<img src="images/cmc-logo.svg" alt="CoinMarketCap logo">
 					CoinMarketCap
 				</a>
-				<a href="https://www.coingecko.com/en/coins/kangal" target="_blank">
+				<a href="https://www.coingecko.com" target="_blank">
 					<img src="images/cg-logo.svg" alt="CoinGecko logo">
 					CoinGecko
 				</a>
 				<a href="https://www.dextools.io/app/uniswap/pair-explorer/0x0bc4428491010dfeaa97e48c70bf4940fa783b40" target="_blank">DEXTools</a>
-				<a href="https://dex.guru/token/0xd632bd021a07af70592ce1e18717ab9aa126decb-bsc" target="_blank">DexGuru</a>
+				<a href="https://dex.guru/token/0xd632bd021a07af70592ce1e18717ab9aa126decb-bsc" target="_blank">DexGuru</a> -->
+				<a href="https://www.dextools.io" target="_blank">DEXTools</a>
+				<a href="https://dex.guru" target="_blank">DexGuru</a>
 			</div>
 		</div>
 
@@ -348,29 +350,29 @@
 
 		<div class="col-md-3 metrics">
 			<div class="metric" data-aos="fade" data-aos-delay="200">
-				<h3>80% 流动性启动池</h3>
-				<h4>720,000,000,000,000,000</h4>
+				<h3>60% 启动销毁</h3>
+				<h4>54,000,000,000,000,000</h4>
 			</div>
 			<div class="metric" data-aos="fade" data-aos-delay="400">
 				<h3>5% 社区活动及空投</h3>
-				<h4>45,000,000,000,000,000</h4>
+				<h4>4,500,000,000,000,000</h4>
 			</div>
 		</div>
 
 		<div class="col-md-6">
 			<p class="pool" data-aos="fade">
-				 总量 900,000,000,000,000,000 <br> 交易税0.2% (0.1%销毁+ 0.1%质押池)
+				 总量 90,000,000,000,000,000 <br> 交易税0.2% (0.1%销毁+ 0.1%质押池)
 			</p>
 		</div>
 
 		<div class="col-md-3 metrics right">
 			<div class="metric" data-aos="fade" data-aos-delay="200">
-				<h3>5% 市场营运及推广</h3>
-				<h4>45,000,000,000,000,000</h4>
+				<h3>30% 流动性启动池</h3>
+				<h4>27,000,000,000,000,000</h4>
 			</div>
-			<div class="metric" data-aos="fade" data-aos-delay="400">
-				<h3>10% 平台合作筹码</h3>
-				<h4>90,000,000,000,000,000</h4>
+			<div class="metric" data-aos="fade" data-aos-delay="200">
+				<h3>5% 市场营运及推广</h3>
+				<h4>4,500,000,000,000,000</h4>
 			</div>
 		</div>
 		
@@ -450,7 +452,7 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-done.svg" alt="Done checkmark">
-				<span>发布 <a href="https://kangalstatic.s3.eu-central-1.amazonaws.com/Litepaper_EN_V1.pdf" target="_blank">Litepaper</a></span>
+				<span>发布 <a href="https://www.swanswap.cc/Litepaper_cn.pdf" target="_blank">Litepaper</a></span>
 			</div>
 			<div class="item">
 				<img src="images/rm-done.svg" alt="">
@@ -466,7 +468,7 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>BSC社区<a href="https://blog.kangaltoken.com/kangal-ama-with-cryptotalkz-c73e5e293ee" target="_blank">AMA</a></span>
+				<span>BSC社区 AMA</span>
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
@@ -474,11 +476,11 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>上线 <a href="https://coinmarketcap.com/currencies/kangal" target="_blank">CoinMarketCap</a></span>
+				<span>上线 <a href="https://coinmarketcap.com" target="_blank">CoinMarketCap</a></span>
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>上线 <a href="https://www.coingecko.com/en/coins/kangal" target="_blank">CoinGecko</a></span>
+				<span>上线 <a href="https://www.coingecko.com" target="_blank">CoinGecko</a></span>
 			</div>
 		</div>
 
@@ -498,7 +500,7 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>ETH及HECO社区<a href="https://blog.kangaltoken.com/kangal-ama-with-cryptotalkz-c73e5e293ee" target="_blank">AMA</a></span>
+				<span>ETH及HECO社区AMA</span>
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
@@ -510,7 +512,7 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>AVAX、Fantom及Polygon社区<a href="https://blog.kangaltoken.com/kangal-ama-with-cryptotalkz-c73e5e293ee" target="_blank">AMA</a></span>
+				<span>AVAX、Fantom及Polygon社区AMA</span>
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
@@ -526,7 +528,7 @@
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
-				<span>发布 <a href="https://kangalstatic.s3.eu-central-1.amazonaws.com/Litepaper_EN_V1.pdf" target="_blank">白皮书</a></span>
+				<span>发布SWAN SWAP白皮书</span>
 			</div>
 			<div class="item">
 				<img src="images/rm-passive.svg" alt="Done checkmark">
@@ -592,19 +594,19 @@
 			<div class="list">
 				<div class="item">
 					<img src="images/checkmark.svg" alt="checkmark">
-					<a>BSC Pancake</a>
+					<a href="javascript: void(0)" target="_blank">BSC Pancake</a>
 				</div>
 				<div class="item">
 					<img src="images/checkmark1.svg" alt="checkmark">
-					<a>ETH UNI及HECO Mdex</a>
+					<a href="javascript: void(0)" target="_self">ETH UNI及HECO Mdex</a>
 				</div>
 				<div class="item">
 					<img src="images/checkmark1.svg" alt="checkmark">
-					<a>AVAX Pangolin、Fantom Spirit及Polygon Quick</a>
+					<a href="javascript: void(0)" target="_self">AVAX Pangolin、Fantom Spirit及Polygon Quick</a>
 				</div>
 				<div class="item">
 					<img src="images/checkmark1.svg" alt="checkmark">
-					<a>OKEx Chain及Gate Chain</a>
+					<a href="javascript: void(0)" target="_self">OKEx Chain及Gate Chain</a>
 				</div>
 			</div>
 		</div>
@@ -620,11 +622,11 @@
 			<div class="list">
 				<div class="item">
 					<img src="images/checkmark1.svg" alt="checkmark">
-					<a>Techrate or MythX (SWAN代币)</a>
+					<a href="javascript: void(0)" target="_self">MythX (SWAN代币)</a>
 				</div>
 				<div class="item">
 					<img src="images/checkmark1.svg" alt="checkmark">
-					<a>CertiK (SWAN代币)</a>
+					<a href="javascript: void(0)" target="_self">CertiK (SWAN代币)</a>
 				</div>
 			</div>
 		</div>
@@ -639,25 +641,28 @@
 			COMMUNITY
 		</h2>
 		
-		<a href="http://twitter.com/kangaltoken" target="_blank">
-			<img src="images/logo/medium.png" alt="Twitter logo">
-			<span>Medium</span>
+		<a href="https://t.me/SwanswapEN" target="_blank">
+			<img src="images/logo/telegram.svg" alt="Telegram logo">
+			<span>Telegram</span>
 		</a>
-
-		<a href="http://twitter.com/kangaltoken" target="_blank">
+		
+		<a href="https://twitter.com/swan_swap" target="_blank">
 			<img src="images/logo/twitter.svg" alt="Twitter logo">
 			<span>Twitter</span>
 		</a>
 		
-		<a href="https://www.reddit.com/r/kangaltoken/" target="_blank">
+		<a href="https://medium.com/@swanswap" target="_blank">
+			<img src="images/logo/medium.png" alt="Twitter logo">
+			<span>Medium</span>
+		</a>
+
+
+		<a href="https://www.reddit.com/user/defiteam/" target="_blank">
 			<img src="images/logo/reddit.svg" alt="Reddit logo">
 			<span>Reddit</span>
 		</a>
 		
-		<a href="http://t.me/kangaltokencommunity" target="_blank">
-			<img src="images/logo/telegram.svg" alt="Telegram logo">
-			<span>Telegram</span>
-		</a>
+		
 		
 		<!-- <a href="https://discord.gg/" target="_blank">
 			<img src="images/discord.svg" alt="Discord logo">
@@ -665,7 +670,7 @@
 		</a> -->
 
 		<div class="others">
-			<a href="https://blog.kangaltoken.com">
+			<a href="mailto:defiteam@qq.com" target="_self">
 				<img src="images/logo/blog.svg" alt="Blog icon">
 				<span>Email</span>
 			</a>
@@ -744,13 +749,14 @@
 		</div>
 		<div class="col-md-4 copyright">Copyright © The SWAN Team 2021 </div>
 		<div class="col-md-4">
-			<a href="mailto:contact@kangaltoken.com" class="contact">联系我们</a>
+			<a href="mailto:defiteam@qq.com" target="_self" class="contact">联系我们</a>
 		</div>
 
 	</div>
 </footer>		
 
 <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@3.0.0/dist/web3.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/clipboard.min.js"></script>
@@ -758,43 +764,6 @@
 <script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 
-<script>
-	var clipboardEth = new ClipboardJS('.eth.copy-to-clipboard i');
-
-	clipboardEth.on('success', function(e) {
-		$('.address .eth i strong').html('Copied!');
-		setTimeout(function(){
-		  $('.address .eth i strong').html('Copy');
-		}, 5000);
-
-	    e.clearSelection();
-	});
-
-	if (!ClipboardJS.isSupported()){
-		$('.fold .address a i').hide();
-	}
-</script>
-
-<script>
-	var clipboardBsc = new ClipboardJS('.bsc.copy-to-clipboard i');
-
-	clipboardBsc.on('success', function(e) {
-		$('.address .bsc i strong').html('Copied!');
-		setTimeout(function(){
-		  $('.address .bsc i strong').html('Copy');
-		}, 5000);
-
-	    e.clearSelection();
-	});
-
-	if (!ClipboardJS.isSupported()){
-		$('.fold .address a i').hide();
-	}
-</script>
-
-<script>
-  AOS.init();
-</script>
 
 </body>
 </html>

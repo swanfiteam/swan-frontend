@@ -427,6 +427,14 @@ header .logo span{ float: left; color: #FFF; font-size: 32px !important; font-we
     display: inline-block;
     width: 45%;
 }
+.address .copy-to-clipboard i:hover{
+-webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02)
+}
+.address .copy-to-clipboard i a{
+   color: #FFF;
+}
 .address .copy-to-clipboard i img{
     display: inline-block;
     vertical-align: middle;
