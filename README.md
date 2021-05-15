@@ -1,6 +1,6 @@
-# Swan Swap Frontend
+# SWAN Token Contracts
 
-### Official Website
+### Contracts Address
 
  [Website](https://www.swanswap.cc/)
  
